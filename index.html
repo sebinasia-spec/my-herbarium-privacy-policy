@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Herbarium Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6F0E1;
+    --bg-elevated: #FBF7EC;
+    --bg-card: #EDE3C9;
+    --ink: #2E2A1E;
+    --ink-soft: #6B6350;
+    --olive: #57642F;
+    --olive-deep: #3E4A22;
+    --brick: #B14A2E;
+    --line: #D5C9A6;
+    --line-soft: #E3D9BC;
+    --shadow: rgba(46, 42, 30, 0.14);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #211C14;
+      --bg-elevated: #2A2318;
+      --bg-card: #2F2819;
+      --ink: #ECE4D0;
+      --ink-soft: #B7AB8C;
+      --olive: #A3B876;
+      --olive-deep: #C9DA9C;
+      --brick: #E2916F;
+      --line: #453B26;
+      --line-soft: #372F1E;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #211C14;
+    --bg-elevated: #2A2318;
+    --bg-card: #2F2819;
+    --ink: #ECE4D0;
+    --ink-soft: #B7AB8C;
+    --olive: #A3B876;
+    --olive-deep: #C9DA9C;
+    --brick: #E2916F;
+    --line: #453B26;
+    --line-soft: #372F1E;
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  header.top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  .mark svg { width: 22px; height: 22px; }
+
+  .wordmark {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: var(--olive-deep);
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: 'Courier Prime', monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.4px;
+    color: var(--ink-soft);
+    margin: 0 0 6px;
+  }
+
+  .standfirst {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 22px 0 0;
+    max-width: 58ch;
+  }
+
+  .tldr {
+    margin: 40px 0 48px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 28px 28px;
+  }
+
+  .tldr .eyebrow {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 700;
+    font-size: 11.5px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--olive-deep);
+    margin: 0 0 14px;
+  }
+
+  .tldr ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 11px;
+  }
+
+  .tldr li {
+    display: flex;
+    gap: 11px;
+    align-items: baseline;
+    font-size: 15.5px;
+    line-height: 1.5;
+  }
+
+  .tldr li::before {
+    content: '';
+    flex: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--olive);
+    margin-top: 7px;
+  }
+
+  .tldr strong {
+    color: var(--olive-deep);
+    font-weight: 600;
+  }
+
+  section {
+    margin: 44px 0;
+  }
+
+  section h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--olive-deep);
+    margin: 0 0 6px;
+  }
+
+  .section-rule {
+    border: none;
+    border-top: 1px solid var(--line-soft);
+    margin: 0 0 18px;
+  }
+
+  section p {
+    margin: 0 0 14px;
+    max-width: 62ch;
+  }
+
+  section p:last-child { margin-bottom: 0; }
+
+  section ul, section ol {
+    margin: 0 0 14px;
+    padding-left: 22px;
+    max-width: 62ch;
+  }
+  section li { margin-bottom: 7px; }
+  section li:last-child { margin-bottom: 0; }
+
+  .not-collected {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 4px;
+  }
+  .not-collected li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 15px;
+  }
+  .not-collected li::before {
+    content: '—';
+    color: var(--brick);
+    font-weight: 600;
+    flex: none;
+  }
+
+  @media (max-width: 480px) {
+    .not-collected { grid-template-columns: 1fr; }
+    h1 { font-size: 34px; }
+    .page { padding: 48px 20px 72px; }
+  }
+
+  a {
+    color: var(--olive-deep);
+    text-decoration-color: var(--line);
+    text-underline-offset: 3px;
+  }
+  a:hover { text-decoration-color: var(--olive-deep); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--olive-deep);
+    outline-offset: 2px;
+  }
+
+  code {
+    font-family: 'Courier Prime', monospace;
+    background: var(--bg-card);
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line-soft);
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  footer a { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="top">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21V10" stroke="#57642F" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M12 14C12 14 6 13 6 7C12 7 12 14 12 14Z" fill="#8B9A5B" stroke="#57642F" stroke-width="1.2"/>
+        <path d="M12 11C12 11 18 10 18 4C12 4 12 11 12 11Z" fill="#57642F" stroke="#3E4A22" stroke-width="1.2"/>
+        <circle cx="12" cy="21" r="1.6" fill="#B14A2E"/>
+      </svg>
+    </div>
+    <span class="wordmark">My Herbarium · Small Wonder Studio</span>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective September 2, 2026</p>
+  <p class="standfirst">The short version: My Herbarium doesn't have an account system, doesn't track you, and doesn't run a server. Everything you log stays on your device.</p>
+
+  <div class="tldr">
+    <p class="eyebrow">At a glance</p>
+    <ul>
+      <li><strong>No account.</strong> Nothing to sign up for, nothing tied to your identity.</li>
+      <li><strong>Nothing leaves your device automatically.</strong> Your logged plants, custom entries, and settings are stored locally, not on our servers.</li>
+      <li><strong>No analytics, no ad trackers.</strong> We don't watch how you use the app.</li>
+      <li><strong>Nothing is sold or shared.</strong> There's no third party to share it with.</li>
+      <li><strong>You're in control of sharing.</strong> The Share feature only sends anything anywhere when you explicitly choose to.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What the app stores</h2>
+    <hr class="section-rule">
+    <p>My Herbarium keeps a few things in local storage on your device, so the app works and remembers your progress between sessions:</p>
+    <ul>
+      <li>The plants you've logged, and when you logged them</li>
+      <li>Any custom plants you've added yourself</li>
+      <li>Your preferences — scoring mode, which day your week starts on, sound on or off</li>
+      <li>Whether you've been through the onboarding walkthrough</li>
+    </ul>
+    <p>None of this is sent to us, to advertisers, or to anyone else. It's not linked to your name, email, or any other identity — the app doesn't ask for or know any of those in the first place. It simply lives in your device's storage, the same way a note-taking app remembers your notes.</p>
+  </section>
+
+  <section>
+    <h2>What we don't collect</h2>
+    <hr class="section-rule">
+    <ul class="not-collected">
+      <li>Your name, email, or phone number</li>
+      <li>Your location</li>
+      <li>Camera, microphone, or photo library access</li>
+      <li>Your contacts</li>
+      <li>Analytics or usage tracking</li>
+      <li>Advertising identifiers</li>
+      <li>Cookies or web trackers</li>
+      <li>Any third-party data sharing</li>
+    </ul>
+    <p>There are no analytics, advertising, or crash-reporting SDKs built into the app — nothing quietly phoning home in the background.</p>
+  </section>
+
+  <section>
+    <h2>Sharing your garden</h2>
+    <hr class="section-rule">
+    <p>When you tap Share, My Herbarium draws an image of your week's specimens right there on your device and hands it to your phone's native share sheet. We never see that image or receive a copy — it only goes wherever you choose to send it, exactly like sharing a photo from your camera roll.</p>
+  </section>
+
+  <section>
+    <h2>Emailing us about a missing plant</h2>
+    <hr class="section-rule">
+    <p>If you use the "missing a plant?" link in the Almanac, it opens your own email app with a message pre-addressed to us. We only receive what you choose to write and send — the app itself never transmits anything on your behalf.</p>
+  </section>
+
+  <section>
+    <h2>App updates</h2>
+    <hr class="section-rule">
+    <p>My Herbarium checks Expo's update service (the infrastructure we use to publish the app) for new versions, the same way any app checks for updates. This exchange involves standard technical details like app and platform version — not anything from your plant log or personal data.</p>
+    <p>Downloading the app itself happens through the App Store or Google Play, who handle that delivery and any diagnostics under their own privacy policies.</p>
+  </section>
+
+  <section>
+    <h2>Data retention and deletion</h2>
+    <hr class="section-rule">
+    <p>Because everything lives on your device and nowhere else, deleting the app deletes its data with it — there's no separate copy on a server for us to hold onto or for you to request removal of. If you'd like a hand clearing anything sooner, or have a question about what's stored, just reach out below.</p>
+  </section>
+
+  <section>
+    <h2>Your rights</h2>
+    <hr class="section-rule">
+    <p>Regulations like the GDPR and CCPA give you rights to access, export, and delete your personal data. Since My Herbarium doesn't collect personal data on any server, there's nothing on our end to access or delete — your data is already entirely in your hands, on your device.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <hr class="section-rule">
+    <p>My Herbarium doesn't knowingly collect personal information from anyone, children included — the app simply doesn't collect personal information at all.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <hr class="section-rule">
+    <p>If this policy ever changes — say, if a future version of the app adds a feature that works differently — we'll update the effective date above and describe the change here.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <hr class="section-rule">
+    <p>Questions about this policy or how My Herbarium handles data: <a href="mailto:smallwonderstudioapps@gmail.com">smallwonderstudioapps@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>My Herbarium is made by Small Wonder Studio.</span>
+    <a href="mailto:smallwonderstudioapps@gmail.com">smallwonderstudioapps@gmail.com</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
